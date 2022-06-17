@@ -18,6 +18,11 @@
             "name" : "HTML",
             "description" : "Créer des pages web avec des balises",
             "progress" : "70%"
+        },
+        {
+            "name" : "CSS",
+            "description" : "embellir mes pages web avec des styles",
+            "progress" : "60%"
         }
     ]
 }

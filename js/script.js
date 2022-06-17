@@ -23,5 +23,55 @@ fetch('js/data.json')
 
         // github
         document.querySelector('.header-info .github').setAttribute('href', data.profile.github)
+
+        // creation de la liste des compétences
+        let skills = data.competences
+        let skillsListView = document.querySelector('.skills .skills-list')
+        //list item à construire avec javascript
+        // <div class="skill-item">
+        //     <span>30%</span>
+        //     <div class="skill">
+        //         <h3 class="title">GitHub</h3>
+        //         <p class="description">Gérer les différentes
+        //             versions de mes projets</p>
+        //     </div>
+        // </div>
+
+        // pour chaque compétence dans KIlls
+        for (const skill of skills) {
+            
+            let skillItem = document.createElement('div')
+            skillItem.classList.add('skill-item')
+
+            let skillSpan = document.createElement('span')
+            skillSpan.textContent = skill.progress
+            // ajout du span au skill item
+            skillItem.appendChild(skillSpan);
+
+            // bloc info
+            let skillInfo = document.createElement('div')
+            skillInfo.classList.add('skill')
+
+            // titre
+            let skillTitle = document.createElement('h3')
+            skillTitle.classList.add('title')
+            skillTitle.textContent = skill.name
+
+            // description
+            let skillDesc = document.createElement('p')
+            skillDesc.classList.add('description')
+            skillDesc.textContent = skill.description
+
+            // ajout de title et description au bloc info
+            skillInfo.appendChild(skillTitle)
+            skillInfo.appendChild(skillDesc)
+
+            // ajout du skill Info au skill item
+            skillItem.appendChild(skillInfo)
+
+            // ajouter l'item dans la list
+            skillsListView.appendChild(skillItem)
+        }
+        
     });
         
