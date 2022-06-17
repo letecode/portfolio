@@ -25,8 +25,7 @@ fetch('js/data.json')
         document.querySelector('.header-info .github').setAttribute('href', data.profile.github)
 
         // creation de la liste des compétences
-        let skills = data.competences
-        let skillsListView = document.querySelector('.skills .skills-list')
+  
         //list item à construire avec javascript
         // <div class="skill-item">
         //     <span>30%</span>
@@ -37,7 +36,10 @@ fetch('js/data.json')
         //     </div>
         // </div>
 
-        // pour chaque compétence dans KIlls
+        let skills = data.competences
+        let skillsListView = document.querySelector('.skills .skills-list')
+
+        // pour chaque compétence dans sKIlls
         for (const skill of skills) {
             
             let skillItem = document.createElement('div')
@@ -73,5 +75,37 @@ fetch('js/data.json')
             skillsListView.appendChild(skillItem)
         }
         
+        // creation de la liste des langues
+        // <div class="lang-item">
+        //     <img src="images/us.png" alt="drapeau americain" class="lang-flag">
+        //     <span>Anglais</span>
+        // </div>
+
+        let langues = data.langues
+        let languesListView = document.querySelector('.lang .langs-list')
+
+        // pour chauque lang dans langues
+        for (const lang of langues) {
+            // bloc item
+            let langItem = document.createElement('div')
+            langItem.classList.add('lang-item')
+
+            // drapeau
+            let langFlag = document.createElement('img')
+            langFlag.classList.add('lang-flag')
+            langFlag.setAttribute('src', lang.flag)
+            langFlag.setAttribute('alt', lang.alt)
+            
+            // titre
+            let langName = document.createElement('span')
+            langName.textContent = lang.name
+
+            //ajout du drapeau et le nom à l'item
+            langItem.appendChild(langFlag)
+            langItem.appendChild(langName)
+
+            // ajout de l'item à la list
+            languesListView.appendChild(langItem)
+        }
     });
         

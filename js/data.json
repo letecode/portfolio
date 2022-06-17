@@ -24,5 +24,27 @@
             "description" : "embellir mes pages web avec des styles",
             "progress" : "60%"
         }
+    ],
+    "langues" : [
+        {
+            "name" : "Anglais",
+            "flag" : "images/us.png",
+            "alt" : "drapeau americain"
+        },
+        {
+            "name" : "Français",
+            "flag" : "images/frflag.png",
+            "alt": "drapeau Français"
+        },
+        {
+            "name" : "Lingala",
+            "flag" : "images/cd.png",
+            "alt" :"drapeau Congolais"
+        },
+        {
+            "name" : "Swahili",
+            "flag" : "images/cd.png",
+            "alt" :"drapeau congolais"
+        }
     ]
 }
