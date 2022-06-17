@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV en HTML et CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-data">
+                <img src="" alt="photo de john doe" class="avatar">
+                <div class="user-data">
+                    <h1 class="title" id="title"></h1>
+                    <div class="contact">
+                        <a href="" class="mail"></a>
+                        <span class="role"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-info">
+                <p class="info"></p>
+                <div class="links">
+                    <a href="" class="phone"></a>
+                    <a href="" class="github">Voir sur GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section skills">
+            <h2 class="section-title">Mes compétences</h2>
+            <p class="section-description">Dans mon parcours en tant que développeur, j’ai acquis plusieurs
+                compétences, en voici quelques unes :</p>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <span>30%</span>
+                    <div class="skill">
+                        <h3 class="title">GitHub</h3>
+                        <p class="description">Gérer les différentes
+                            versions de mes projets</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>70%</span>
+                    <div class="skill">
+                        <h3 class="title">HTML</h3>
+                        <p class="description">Créer des pages web 
+                            avec des balises</p>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <span>60%</span>
+                    <div class="skill">
+                        <h3 class="title">CSS3</h3>
+                        <p class="description">embellir mes pages web
+                            avec des styles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section lang">
+            <h2 class="section-title">Langues</h2>
+            <p class="section-description">je parle, écris et comprends les langues suivantes :</p>
+            <div class="langs-list">
+                <div class="lang-item">
+                    <img src="images/us.png" alt="drapeau americain" class="lang-flag">
+                    <span>Anglais</span>
+                </div>
+                <div class="lang-item">
+                    <img src="images/frflag.png" alt="drapeau Français" class="lang-flag">
+                    <span>Français</span>
+                </div>
+                <div class="lang-item">
+                    <img src="images/cd.png" alt="drapeau congolais" class="lang-flag">
+                    <span>Lingala</span>
+                </div>
+                <div class="lang-item">
+                    <img src="images/cd.png" alt="drapeau congolais" class="lang-flag">
+                    <span>Swahili</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section expert">
+            <h2 class="section-title">Expériences</h2>
+            <p class="section-description">Mon parcours au fil du temps</p>
+            <div class="expert-list">
+                <div class="expert-item">
+                    <div class="tagline">
+                        <span class="dot"></span>
+                        <hr>
+                    </div>
+                    <p class="tag-data">2018 : Étudiant</p>
+                </div>
+
+                <div class="expert-item">
+                    <div class="tagline">
+                        <span class="dot"></span>
+                        <hr>
+                    </div>
+                    <p class="tag-data">2020 : Développeur</p>
+                </div>
+
+                <div class="expert-item">
+                    <div class="tagline">
+                        <div class="dot"></div>
+                        <hr>
+                    </div>
+                    <p class="tag-data">2022 : Entrepreneur</p>
+                </div>
+
+                <div class="expert-item">
+                    <div class="tagline">
+                        <span class="dot"></span>
+                        <hr>
+                    </div>
+                    <p class="tag-data">2025 : Professeur</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section form">
+            <h2 class="section-title">Me contacter</h2>
+            <p class="section-description">Entrez en contact avec moi via ce formulaire</p>
+            <form class="">
+                <div class="form-row">
+                    <div class="champ nom">
+                        <input type="text" placeholder="Entrez votre nom" required>
+                    </div>
+                    <div class="champ prenom">
+                        <input type="text" placeholder="Entrez votre Prénom" required>
+                    </div>
+                </div>
+
+                <div class="champ email">
+                    <input type="email" placeholder="Entrez votre adresse email" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="champ object">
+                        <select name="" id="">
+                            <option value="">Sélectionez l'objet de votre message</option>
+                            <option value="">Objet 1</option>
+                            <option value="">Objet 1</option>
+                            <option value="">Objet 1</option>
+                            <option value="">Objet 1</option>
+                            <option value="">Objet 1</option>
+                        </select>
+                    </div>
+                    <div class="radios genre">
+                        <div class="radio-bloc">
+                            <input type="radio" name="genre" id="homme">
+                            <label for="homme">Homme</label>
+                        </div>
+                        <div class="radio-bloc">
+                            <input type="radio" name="genre" id="femme">
+                            <label for="femme">Femme</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="champ message">
+                   <textarea name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message ici"></textarea>
+                   <span class="error-message">* Ce champ est obligatoire</span>
+                </div>
+
+                <div class="champ button">
+                    <button type="submit" class="btn-submit">Envoyer</button>
+                </div>
+            </form>
+
+            <p class="copyright">© Portfolio réalisé dans le cadre de mon apprentissage en HTML et CSS avec <a href="http://Letecode.com">Letecode.com</a></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #707070;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.header-data {
+    display: flex;
+    padding: 10px;
+}
+
+.header-data .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 25px;
+    box-shadow: 0px 12px 6px rgba(0, 0, 0, 0.16);
+}
+
+.header-data .user-data .title {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.header-data .user-data .mail {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 300;
+}
+
+.header-data .user-data .mail:hover {
+    text-decoration: underline;
+    color: #4595F4;
+}
+
+.header-data .user-data .role {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    background-color: #4595F4;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.header-info {
+    margin-top: 20px;
+}
+
+.header-info p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-indent: 40px;
+}
+
+.header-info .links {
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
+.header-info .links a {
+    color: #4595F4;
+    font-weight: 300;
+}
+
+.section {
+    margin-top: 20px;
+}
+.section .section-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.section .section-description {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.skills .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.skills .skill-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    width: 49%;
+    margin-top: 10px;
+}
+
+.skills .skill-item:hover,
+.lang .lang-item:hover {
+    border: none;
+    background-color: #ACC2EA;
+    color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.skills .skill-item span {
+    font-size: 60px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.skills .skill-item .skill {
+    margin-left: 15px;
+}
+
+.skills .skill-item .title {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.skills .skill-item .description {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.lang .langs-list {
+    margin-top: 20px;
+    display: flex;
+}
+
+.lang .lang-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border: 1px solid #707070;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.lang .lang-item span {
+    margin-left: 10px;
+}
+
+.lang .langs-list .lang-flag {
+    width: 50px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.expert .expert-list {
+    margin-top: 20px;
+    display: flex;
+}
+
+.expert .expert-item {
+    margin-right: 20px;
+    width: 25%;
+}
+
+.expert .expert-item .tagline {
+    align-items: center;
+    display: flex;
+}
+
+.expert .expert-item .tagline .dot {
+    width: 20px;
+    height: 20px;
+    background-color: #707070;
+    border-radius: 50%;
+}
+
+.expert .expert-item .tagline hr {
+    width: calc(100% - 30px);
+    margin-left: 10px;
+    height: 2px;
+    border: none;
+    background-color: #707070;
+}
+
+.expert .expert-item .tag-data {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.expert .expert-item:hover .tagline hr,
+.expert .expert-item:hover .dot {
+    background-color: #448E1D;
+    color: #448E1D;
+}
+
+.form form {
+    margin-top: 20px;
+}
+
+.form .form-row {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.form .form-row .champ {
+    width: 49%;
+}
+
+.form .champ.email {
+    margin-bottom: 20px;
+}
+
+.form input:not([type=radio]), .form select, textarea {
+    width: 100%;
+    height: 53px;
+    border-radius: 8px; 
+    border: 1px solid #707070;
+    padding: 0px 12px;  
+}
+
+.form input:focus,
+.form input:focus-visible,
+.form input:focus-within,
+.form input::-moz-focus-inner {
+    border: 1px solid #4595F4;
+    outline: none;
+    outline-color: #4595F4;
+}
+
+.form .radios {
+    display: flex;
+    width: 49%;
+    align-items: center;
+}
+
+.form .radios .radio-bloc {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.form .radios input {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.form textarea {
+    height: auto;
+    padding: 12px;
+}
+
+.form .champ .error-message {
+    color: #FF0000;
+    font-size: 12px;
+}
+
+.form .champ button.btn-submit {
+    height: 53px;
+    border-radius: 8px;
+    background-color: #4595F4;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    padding: 0px 25px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+.form .champ button.btn-submit:hover {
+    background-color: #2680ee;
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 300;
+}

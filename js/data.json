@@ -1,0 +1,23 @@
+{
+    "profile" : {
+        "avatar" : "images/avatar.jpg",
+        "name" : "Jean claude Mbiya",
+        "email" : "mbiyajeanclaude@gmail.com",
+        "role" : "Developper",
+        "description" : "Je suis développeur et formateur chez letecode.com, j'aime apprendre et partager mes connaissances aux autres",
+        "phone" : "+243817784697",
+        "github" : "https://github.com/letecode/moncv"
+    },
+    "competences" : [
+        {
+            "name" : "Github",
+            "description" : "Gérer les différentes versions de mes projets",
+            "progress" : "30%"
+        },
+        {
+            "name" : "HTML",
+            "description" : "Créer des pages web avec des balises",
+            "progress" : "70%"
+        }
+    ]
+}
