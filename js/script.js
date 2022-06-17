@@ -107,5 +107,36 @@ fetch('js/data.json')
             // ajout de l'item à la list
             languesListView.appendChild(langItem)
         }
+
+        //creation de la liste d'expérience
+        // avec une nouvelle methode
+
+        // <div class="expert-item">
+        //     <div class="tagline">
+        //         <span class="dot"></span>
+        //         <hr>
+        //     </div>
+        //     <p class="tag-data">2018 : Étudiant</p>
+        // </div>
+
+        let experiences = data.experiences
+        let experView = document.querySelector('.expert .expert-list')
+
+        for (const experience of experiences) {
+            // creation du bloc 
+            let expItem = document.createElement('div')
+            expItem.classList.add('expert-item')
+
+            expItem.innerHTML = `
+                <div class="tagline">
+                   <span class="dot"></span>
+                   <hr>
+                </div>
+                <p class="tag-data">${experience.year} : ${experience.role}</p>
+            `
+
+            // ajout de l'item dans la liste
+            experView.appendChild(expItem)
+        }
     });
         

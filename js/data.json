@@ -46,5 +46,23 @@
             "flag" : "images/cd.png",
             "alt" :"drapeau congolais"
         }
+    ],
+    "experiences" : [
+        {
+            "year" : "2018",
+            "role" : "Étudiant"
+        },
+        {
+            "year" : "2020",
+            "role" : "Développeur"
+        },
+        {
+            "year" : "2022",
+            "role" : "Entrepreneur"
+        },
+        {
+            "year" : "2025",
+            "role" : "Professeur"
+        }
     ]
 }
